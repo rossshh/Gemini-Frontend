@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import { Context } from "../context/Context";
 import { useNavigate } from "react-router-dom";
-import OtpModal from "./OtpModal";
 
 function Login() {
   const {storeTokenInLS}=useContext(Context);
