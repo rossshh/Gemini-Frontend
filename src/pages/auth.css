@@ -1,0 +1,135 @@
+.login-container {
+    width: 100%;
+}
+
+.login-container .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.login-container .login-form-container {
+    border: 5px solid white;
+    border-top-color: #4b90ff;
+    border-bottom-color: #ff5546;
+    border-left-color: #4b90ff;
+    border-right-color: #ff5546;
+    border-radius: 50px;
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .form-container{
+    margin-inline: 44px;
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-container .auth-login-credentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.login-container .auth-login-credentials label{
+    font-weight: bold;
+}
+.login-container .auth-credentials input{
+    padding:8px;
+    border-radius: 30px;
+    border-top-color: #4b90ff;
+    border-bottom-color: #ff5546;
+}
+.login-container .auth-submit-button{
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5%;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px;
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+}
+.login-container .auth-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.footer-buttons{
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+} 
+#name{
+    margin-bottom: 8px;
+}
+
+/* Media Queries */
+
+/* For large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    .login-container .login-form-container {
+        width: 30%;
+        height: 80%;
+        top: 10%;
+        left: 35%;
+    }
+}
+
+/* For medium screens (Laptops) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .login-container .login-form-container {
+        width: 40%;
+        height: 80%;
+        top: 10%;
+        left: 30%;
+    }
+}
+
+/* For small screens (Tablets) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .login-container .login-form-container {
+        width: 60%;
+        height: 80%;
+        top: 10%;
+        left: 20%;
+    }
+}
+
+/* For extra small screens (Mobiles) */
+@media only screen and (max-width: 479px) {
+    .login-container .login-form-container {
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 10%;
+    }
+    .login-container .form-container{
+        margin-inline: 20px;
+    }
+    .login-container .auth-login-credentials{
+        margin-bottom: 10px;
+    }
+    .login-container .auth-submit-button{
+        margin-top: 10%;
+    }
+    .login-container .auth-footer{
+        margin-top: 5%;
+    }
+}
